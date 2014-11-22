@@ -1,0 +1,11 @@
+{
+    "applications": {
+        "CloudCodeExample": {
+            "applicationId": "x6RuG1CS5SV7H1p6ytmHfJtpfS0FTNFKyDv1ckpZ", 
+            "masterKey": "ibT8a9wqNqjUXaG11MLkm7ffWca0WQS4Z0Lh6TnC"
+        }, 
+        "_default": {
+            "link": "CloudCodeExample"
+        }
+    }
+}
