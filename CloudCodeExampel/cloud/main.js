@@ -118,8 +118,8 @@ var _commonSendHttp = function(request, response, opt) {
 /**
 *
 * curl -X POST \
--H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
--H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+-H "X-Parse-Application-Id: YOUR_APP_ID" \
+-H "X-Parse-REST-API-Key: YOUR_API_KEY" \
 -H "Connection: keep-alive" \
 -H "Content-Type: application/json" \
 -d '{}' \
@@ -161,8 +161,8 @@ Parse.Cloud.define("averageStars", function(request, response) {
 /**
 * how to test with curl {"col":"temper", "data": {"owner": "brian.jang", "t_c": 27}}
 * curl -X POST \
-  -H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
-  -H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+  -H "X-Parse-Application-Id: YOUR_APP_ID" \
+  -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"col":"fluffy", "data": {"o": "fluffy", "d_id" : "A001" ,"t_c": 27, "i_s": 10}}' \
   https://api.parse.com/1/functions/createObject
@@ -196,8 +196,8 @@ Parse.Cloud.define("createObject", function(request, response) {
 /**
 * hwo to test with curl {"col":"temper", "data": {"obj_id" : '8r5wFjIplA'}
 * curl -X POST \
-  -H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
-  -H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+  -H "X-Parse-Application-Id: YOUR_APP_ID" \
+  -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs"}}' \
   https://api.parse.com/1/functions/RetrievObject
@@ -214,8 +214,8 @@ Parse.Cloud.define("RetrievObject", function(request, response) {
     }
  
 // curl -X GET \
-//   -H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
-//   -H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+//   -H "X-Parse-Application-Id: YOUR_APP_ID" \
+//   -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
 //   https://api.parse.com/1/classes/temper/4IU4i8dihs
     var opt = {};
     opt.mode = 'GET';
@@ -230,8 +230,8 @@ Parse.Cloud.define("RetrievObject", function(request, response) {
 /**  
 * how to test with curl {"col":"temper", "data": {"owner": "brian.jang", "t_c": 27}}
 * curl -X POST \
-  -H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
-  -H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+  -H "X-Parse-Application-Id: YOUR_APP_ID" \
+  -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs", "temp_c": 37}}' \
   https://api.parse.com/1/functions/UpdateObject
@@ -264,8 +264,8 @@ Parse.Cloud.define("UpdateObject", function(request, response) {
 /**  
 * how to test with curl 
 * curl -X POST \
-  -H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
-  -H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+  -H "X-Parse-Application-Id: YOUR_APP_ID" \
+  -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs"}}' \
   https://api.parse.com/1/functions/DeleteObject
@@ -297,8 +297,8 @@ Parse.Cloud.define("DeleteObject", function(request, response) {
 /**  
 * how to test with curl 
 * curl -X POST \
-  -H "X-Parse-Application-Id: G5DeUoiZMLxMPELna3FM2G9Lqa3ihzSIcLsZOuTr" \
-  -H "X-Parse-REST-API-Key: mXPdL4xqPuHgOEHKh22JhlqU2V2Pkzwy65Lulz9A" \
+  -H "X-Parse-Application-Id: YOUR_APP_ID" \
+  -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
   -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs", "temp_c" : {"__op" : "Delete"} } }' \
   https://api.parse.com/1/functions/DeleteObjectField
