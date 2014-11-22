@@ -164,7 +164,7 @@ Parse.Cloud.define("averageStars", function(request, response) {
   -H "X-Parse-Application-Id: YOUR_APP_ID" \
   -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"col":"fluffy", "data": {"o": "fluffy", "d_id" : "A001" ,"t_c": 27, "i_s": 10}}' \
+  -d '{"col":"mydb", "data": {"o": "mydb", "d_id" : "A001" ,"t_c": 27, "i_s": 10}}' \
   https://api.parse.com/1/functions/createObject
 */
 Parse.Cloud.define("createObject", function(request, response) {
@@ -199,7 +199,7 @@ Parse.Cloud.define("createObject", function(request, response) {
   -H "X-Parse-Application-Id: YOUR_APP_ID" \
   -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs"}}' \
+  -d '{"col":"mydb", "data": {"obj_id" : "4IU4i8dihs"}}' \
   https://api.parse.com/1/functions/RetrievObject
  
 */
@@ -233,7 +233,7 @@ Parse.Cloud.define("RetrievObject", function(request, response) {
   -H "X-Parse-Application-Id: YOUR_APP_ID" \
   -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs", "temp_c": 37}}' \
+  -d '{"col":"mydb", "data": {"obj_id" : "4IU4i8dihs", "temp_c": 37}}' \
   https://api.parse.com/1/functions/UpdateObject
 */
 Parse.Cloud.define("UpdateObject", function(request, response) {
@@ -267,7 +267,7 @@ Parse.Cloud.define("UpdateObject", function(request, response) {
   -H "X-Parse-Application-Id: YOUR_APP_ID" \
   -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs"}}' \
+  -d '{"col":"mydb", "data": {"obj_id" : "4IU4i8dihs"}}' \
   https://api.parse.com/1/functions/DeleteObject
 */
 Parse.Cloud.define("DeleteObject", function(request, response) {
@@ -300,7 +300,7 @@ Parse.Cloud.define("DeleteObject", function(request, response) {
   -H "X-Parse-Application-Id: YOUR_APP_ID" \
   -H "X-Parse-REST-API-Key: YOUR_API_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"col":"fluffy", "data": {"obj_id" : "4IU4i8dihs", "temp_c" : {"__op" : "Delete"} } }' \
+  -d '{"col":"mydb", "data": {"obj_id" : "4IU4i8dihs", "temp_c" : {"__op" : "Delete"} } }' \
   https://api.parse.com/1/functions/DeleteObjectField
 */
 Parse.Cloud.define("DeleteObjectField", function(request, response) {
